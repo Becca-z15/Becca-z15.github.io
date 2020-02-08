@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Responsive Images</title>
+    </head>
+    <body>
+        <div class="img-container">
+            <img srcset="museum-325_x_216.jpg 325w,
+            cat-500_x_333.jpg 500w
+            cat-960_x_640.jpg 960w"
+            src="img/cat.jpg" alt="cat">
+            <picture>
+                <source srcset="cat-325_x_216.jpg 325w,
+                cat-500_x_333.jpg 500w
+                cat-960_x_640.jpg 960w"
+                media="(max-width: 960px)"> 
+                <source srcset="img/cat-960_x_960.jpg 960w,
+                img/cat-1280_x_1280.jpg 1280W"
+                media="(min-width: 960px)">
+                <img src="img/cat.jpg" alt="cat">
+            </picture>
+        </div>
+    </body>
+</html>
