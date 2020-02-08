@@ -174,7 +174,7 @@ button[type="calculate"]{
     text-align: center;
 }
 #facebook, #instagram, #twitter, #linkedin{
-    padding: 40px 10px 20px 10px;
+    padding: 4git0px 10px 20px 10px;
 }
 
 /*Responsive website*/
@@ -184,30 +184,65 @@ button[type="calculate"]{
         margin: 20px 10px 0 0;
         line-height: 3rem;
     }
+    h4{
+        margin: 10px 10px;
+    }
+    h5{
+        margin: 5px 10px;
+    }
+    footer{
+        padding: 20px 40px 20px 50px;
+    }
+    #hours, #city, button[type="calculate"]{
+        margin: 0 0 0 10px;
+    }
     button[type="calculate"]{
         width: 260px;
     }
+    #facebook, #instagram, #twitter, #linkedin{
+        padding: 40px 10px 20px 10px;
+    }
 }
 @media (min-width: 1024px){
+    h4{
+        margin: 10px 20px;
+    }
+    h5{
+        margin: 5px 20px;
+    }
+    footer{
+        padding: 20px 40px 20px 50px;
+    }
     body{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(10, 1fr);
     }
     footer{
         grid-column: 1/span 12;
-        grid-row: 9/span 2;
     }
     .background{
-        grid-column: 1/13;
-        grid-row: 1/11;
+        grid-column: 1/span 12;
+        grid-row-start: 1;
     }
     .header{
-        grid-column: 2/span 3;
-        grid-row: 2/span 3;
+        grid-column: 2/span 4;
+        grid-row-start: 1;
     }
     .container{
-        grid-column: 9/span 3;
-        grid-row: 3/span 3;
+        grid-column: 8/span 4;
+        grid-row-start: 1;
+        width: 100%;
+        margin: 150px 0 60px 0;
+    }
+    #hours, #city, button[type="calculate"]{
+        float: left;
+        margin: 0 0 0 20px;
+    }
+    .icons{
+        float: right;
+        margin: 0 50px 0 0;
+    }
+    #facebook, #instagram, #twitter, #linkedin{
+        padding: 40px 10px 20px 10px;
     }
 }
