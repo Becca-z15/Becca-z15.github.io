@@ -1,0 +1,74 @@
+body{
+    min-width: 31rem;
+    margin: 50px auto;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px black solid;
+}
+
+/*longhanded version*/
+.box{
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.5s;
+}
+
+/*longhanded version*/
+.box{
+    transition: background 0.3s ease-out 0.5s;
+}
+
+/*all*/
+.box{
+    transition: all 0.3s ease-out 0.5s;
+}
+
+/*transform*/
+.box{
+    transform: translate(50px, 100px);
+}
+.box{
+    transform: translate(-100px, -25px);
+}
+
+/*rotate*/
+.box{
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+.box{
+    transform: rotate(item);
+}
+.box{
+    transform: rotate(200grad);
+}
+.box{
+    transform: rotate(6.2832rad);
+}
+
+/*.box{
+    transform-origin: top-left;
+}*/
+
+/*
+*scale*
+.box{
+    transform: scale(0.5, 2);
+}*/
+
+/*skew*/
+.box{
+    transform: skew(15deg);
+}
+.box{
+    transform: skew(-0);
+}
