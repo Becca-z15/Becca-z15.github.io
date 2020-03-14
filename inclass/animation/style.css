@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/**/
+.btn-container{
+    width: 175px;
+    height: 50px;
+    margin: 10px auto;
+    font-family: monospace;
+}
+
+.btn{
+    width: 100%;
+    height: 100%;
+    background-color: rebeccapurple;
+    border-radius: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+}
+
+/*hover styles*/
+.btn:hover{
+    transform: scale(1.2);
+    box-shadow: 0.5px 10px rgb(102, 51, 153, 1);
+}
+.btn:active{
+    transform: translateY(-1px);
+}
+
+/*long hand version*/
+.btn-animation{
+    animation-name: moveInFromBottom;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    animation-fill-mode: backwards;
+}
+/*short hand version*/
+.btn-animation{
+    animation: moveInFromBottom 5s 0.5s ease-in-out 10 backwards;
+}
+
+
+/*keyframes*/
+@keyframes moveInFromBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
