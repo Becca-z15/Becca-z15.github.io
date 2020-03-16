@@ -214,7 +214,7 @@ footer{
     position: absolute;	
     opacity:0.6; 
     filter: alpha(opacity=60);
-    clip: rect(0px,800px,130px,0px);
+    clip: rect(0px,1024px,130px,0px);
 }
 .services h2{
     position: relative;
@@ -373,37 +373,69 @@ input{
 
 /** Desktop style **/
 @media (min-width: 1024px){
-    .header, footer{
-        grid-column: 1/span 9;
+    .discover{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
     }
-    /** responsive homepage **/
     .discover-1{
-        grid-column: 1/span 4;
+        grid-column: 1/span 5;
     }
     #discover{
-        grid-column: 5/span 8;
+        grid-column: 6/span 4;
     }
     .school{
-        grid-column: 1/span 10;
+        background-color: lightgrey;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .school img{
+        grid-column: 2/span 4;
+        clip: rect(100px,1024px,400px,0px);
+        width: 50%;
+        transform: translate(10%, 10%);
+    }
+    #school{
+        grid-column: 6/span 3;
+        transform: translate(10%, -10%);
     }
     .simon{
-        grid-column: 1/span 10;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
     }
-    #simon, #simon-title, .simon p{
-        display: inline;
+    #simon{
+        grid-column: 1/span 2;
     }
-    #simon img{
-        width: 20%;
+    #simon-title{
+        grid-column: 3/span 2;
+    }
+    .simon p{
+        grid-column: 5/span 5;
+    }
+    .entertainment{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .entertainment img{
+        grid-column: 6/span 3;
+        clip: rect(100px,1024px,400px,0px);
+        width: 50%;
+        transform: translate(85%, 10%);
+    }
+    #entertainment{
+        grid-column: 1/span 3;
+        transform: translate(10%, -20%);
     }
 
     /** responsive aboutpage **/
+    .clearfix{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
     .construction{
-        width: 50%;
+        grid-column: 1/span 5;
     }
     #construction{
-        width: 50%;
-        float: right;
-        transform: translate(-5%, -90%);
+        grid-column: 6/ span3;
     }
     #about{
         width: 100%;
