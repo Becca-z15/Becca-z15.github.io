@@ -1,0 +1,447 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** css reset **/
+
+
+/** Pages **/
+/** Style the font of the entire page **/
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+h1{
+    font-size: 200%;
+    font-weight: bolder;
+    line-height: 3rem;
+    font-family: 'Krona One', sans-serif;
+    padding: 10% 0 10% 0;
+}
+
+h2{
+    font-size: 220%;
+    font-weight: bold;
+    line-height: 2.8rem;
+    padding: 5% 0 5% 0;
+}
+h3{
+    font-family: 'Krona One', sans-serif;
+	font-size: 130%;
+    line-height: 2.5rem;
+    padding: 5% 0 2% 0;
+}
+h4{
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 2.2rem;
+    padding: 1% 0 1% 0;
+}
+h5{
+    font-size: 130%;
+    line-height: 2.2rem;
+    color: white;
+}
+h6{
+    font-size: 120%;
+    line-height: 2.2rem;
+}
+p{
+    line-height: 2rem;
+    padding: 1% 0 1% 0;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0 10% 0 10%;
+}
+.green{
+    color: lightseagreen;
+}
+
+/** Style the button of the entire page **/
+button{
+    color: #f7f7ff;
+    background-color: lightseagreen;
+    font-size: 160%;
+    font-weight: bold;
+    border-radius: 30px;
+    border-style: none;
+    padding: 10px;
+    width: 80%;
+    margin: 10%;
+    box-shadow: 0 3px 5px 0 grey;
+}
+
+
+/** Mobile style **/
+/** Style header part **/
+.header{
+    background-color: darkslategray;
+    color: white;
+}
+.logo{
+    text-align: center;
+}
+
+/** Style navigation part **/
+.nav{
+    text-align: center;
+}
+.nav ol{
+    list-style-type: none;
+}
+.nav li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+nav a.active,
+nav a:hover{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/** Style the footer part **/
+footer{
+    background-color: gainsboro;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/** Style the content **/
+/** Page Home **/
+.discover img{
+    margin: 10%;
+}
+.simon{
+    background-color: dimgray;
+    color: white;
+}
+#simon, #simon-title{
+    text-align: center;
+    padding: 10% 0 0 0;
+
+}
+#simon img{
+    border-radius:50%;
+    border: 5px solid white;
+}
+.simon p{
+    padding: 10% 0 10% 0;
+}
+
+/** Page About **/
+#construction img{
+    margin: 10%;
+}
+.about{
+    position: relative;
+    background-color: darkcyan;
+    height: 130px;
+}
+.about img{
+    position: absolute;	
+    opacity:0.6; 
+    filter: alpha(opacity=60);
+    clip: rect(0px,1920px,130px,0px);;
+}
+.about h2{
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#about, .bowling{
+    background-color: lightgrey;
+    padding: 0 0 70px 0;
+}
+.break{
+    padding: 0 0 70px 0;
+}
+.services{
+    position: relative;
+    background-color: darkcyan;
+    height: 130px;
+}
+.services img{
+    position: absolute;	
+    opacity:0.6; 
+    filter: alpha(opacity=60);
+    clip: rect(0px,800px,130px,0px);
+}
+.services h2{
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.special-thank{
+    text-align: center;
+}
+#special-thank{
+    margin: 10%;
+}
+#special-thank img{
+    padding: 10px 0 10px 0;
+}
+
+/** Page Contact **/
+.contact img{
+    margin: 0 10% 0 10%;
+}
+#form{
+    text-align: center;
+    display: block;
+    background-color: darkcyan;
+    color: white;
+	width: 80%;
+    height: auto;
+	margin: 20px auto 60px auto;
+    border-radius: 30px 30px;
+    box-shadow: 5px 5px 5px 5px #c2c2c2;
+	padding: 25px;
+}
+input{
+    border-radius: 10px;
+    background-color: #f7f7ff;
+    font-size: 120%;
+    border-style: none;
+    max-width: 85%;
+}
+#contact-form{
+	margin: 0 0 10px;
+	min-width: 60%;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+}
+.map{
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+
+/** Responsive website **/
+/** Table style **/
+@media (min-width: 540px){
+    /** responsive font **/
+    h1{
+        font-size: 300%;
+        line-height: 5rem;
+        padding: 50px 0 50px 0;
+    }
+    
+    h2{
+        font-size: 240%;
+        line-height: 2.8rem;
+        padding: 30px 0 30px 0;
+    }
+    h3{
+        font-size: 150%;
+        line-height: 2.5rem;
+        padding: 30px 0 10px 0;
+    }
+    h4{
+        font-size: 150%;
+        line-height: 2.2rem;
+        padding: 10px 0 10px 0;
+    }
+    h5{
+        font-size: 150%;
+        line-height: 2.2rem;
+    }
+    h6{
+        font-size: 140%;
+        line-height: 2.2rem;
+    }
+
+    /** responsive navigation **/
+    .logo, .nav{
+        display: inline;
+    }
+    .header{
+        padding: 0 10% 0 10%;
+    }
+    .nav ol{
+        display: flex;
+        float: right;
+        transform: translate(0, 50%);
+    }
+    .nav li a{
+        font-size:1.25rem;
+        padding:15px;
+    }
+    /** responsive homepage **/
+    #discover{
+        text-align: center;
+    }
+    .discover img{
+        width: 60%;
+    }
+    .school img{
+        position: absolute;
+        clip: rect(220px,1024px,400px,0px);
+        transform: translate(0, -50%);
+    }
+    .school h3{
+        padding: 200px 0 0 0;
+    }
+    .entertainment img{
+        position: absolute;
+        clip: rect(120px,1024px,360px,0px);
+        transform: translate(0, -30%);
+    }
+    .entertainment h3{
+        padding: 250px 0 0 0;
+    }
+
+    /** responsive aboutpage **/
+    .break, .bowling{
+        height: 500px;
+    }
+    .break img, .bowling img{
+        width: 35%;
+        height: 400px;
+        padding: 75px 10% 0 10%;
+    }
+    .break img{
+        float: left;        
+    }
+    .bowling img{
+        float: right;
+    }
+    #break, #bowling{
+        padding: 70px 0 0 0;
+    }
+
+    /** responsive contactpage **/
+    #contact{
+        text-align: center;
+    }
+    #contact img{
+        width: 60%;
+    }
+}
+
+/** Desktop style **/
+@media (min-width: 1024px){
+    .header, footer{
+        grid-column: 1/span 9;
+    }
+    /** responsive homepage **/
+    .discover-1{
+        grid-column: 1/span 4;
+    }
+    #discover{
+        grid-column: 5/span 8;
+    }
+    .school{
+        grid-column: 1/span 10;
+    }
+    .simon{
+        grid-column: 1/span 10;
+    }
+    #simon, #simon-title, .simon p{
+        display: inline;
+    }
+    #simon img{
+        width: 20%;
+    }
+
+    /** responsive aboutpage **/
+    .construction{
+        width: 50%;
+    }
+    #construction{
+        width: 50%;
+        float: right;
+        transform: translate(-5%, -90%);
+    }
+    #about{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .break img, .bowling img{
+        width: 44%;
+        padding: 75px 10% 0 10%;
+    }
+    #special-thank{
+        display: inline;
+    }
+    #special-thank img{
+        width: 10%;
+        padding: 0 20px 0 20px;
+        vertical-align: middle;
+    }
+
+    /** responsive contactpage **/
+    .content{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .contact{
+        grid-column: 1/span 6;
+    }
+    .location{
+        grid-column: 1/span 5;
+        transform: translate(5%, 5%);
+    }
+    #form{
+        grid-column: 6/span 3;
+        width: 200%;
+    }
+    .map{
+        padding: 30px 0 0 0;
+        grid-column: 6/span 3;
+        transform: translate(5%, 0);
+    }
+}
