@@ -233,9 +233,14 @@ footer{
     top: 50%;
     transform: translate(0, -50%);
 }
-#dosth, .bowling{
+#dosth, .qualities{
     background-color: #E8F2FE;
-    padding: 0 0 70px 0;
+    padding: 0 0 260px 0;
+}
+.college img{
+    position: absolute;
+    clip: rect(120px,1024px,360px,0px);
+    transform: translate(0, -26%);
 }
 
 /** Page About **/
@@ -262,9 +267,11 @@ footer{
     top: 50%;
     transform: translate(0, -50%);
 }
-.skills{
-    padding: 0 0 70px 0;
+.skills, .qualities{
+    height: 900px;
+    padding: 0 0 100px 0;
 }
+
 .qualities{
     background-color: #E8F2FE;
 }
@@ -396,10 +403,13 @@ input{
     .me p{
         grid-column: 3/span 2;
     }
+    #dosth{
+        padding: 0 0 70px 0;
+    }
     .college img{
         position: absolute;
         clip: rect(120px,1024px,360px,0px);
-        transform: translate(0, -30%);
+        transform: translate(0, -10%);
     }
     .college h3{
         padding: 250px 0 0 0;
@@ -407,7 +417,8 @@ input{
 
     /** responsive aboutpage **/
     .skills, .qualities{
-        height: 500px;
+        height: 700px;
+        padding: 0 0 100px 0;
     }
     .skills img, .qualities img{
         width: 35%;
@@ -510,6 +521,9 @@ input{
     #start img{
         width: 100%;
         transform: translate(-20%, 5%);
+    }
+    .skills, .qualities{
+        height: 600px;
     }
     .skills img, .qualities img{
         width: 44%;
