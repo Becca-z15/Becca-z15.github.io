@@ -268,6 +268,9 @@ footer{
 .qualities{
     background-color: #E8F2FE;
 }
+.skills img, .qualities img{
+    width: 100%;
+}
 .portfolio{
     text-align: center;
     background-color: #E6FAFF;
