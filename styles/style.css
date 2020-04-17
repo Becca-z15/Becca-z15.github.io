@@ -243,6 +243,11 @@ footer{
     margin: 10%;
     width: 80%;
 }
+.block{
+    position: relative;
+    background-color: #5D9DD2;
+    height: 130px;
+}
 .block img{
     position: absolute;	
     opacity:0.6; 
@@ -257,16 +262,15 @@ footer{
     top: 50%;
     transform: translate(0, -50%);
 }
-.break{
+.skills{
     padding: 0 0 70px 0;
 }
-.block{
-    position: relative;
-    background-color: #5D9DD2;
-    height: 130px;
+.qualities{
+    background-color: #E8F2FE;
 }
 .portfolio{
     text-align: center;
+    background-color: #E6FAFF;
 }
 #portfolio{
     margin: 10%;
@@ -399,21 +403,21 @@ input{
     }
 
     /** responsive aboutpage **/
-    .break, .bowling{
+    .skills, .qualities{
         height: 500px;
     }
-    .break img, .bowling img{
+    .skills img, .qualities img{
         width: 35%;
         height: 400px;
         padding: 75px 10% 0 10%;
     }
-    .break img{
+    .skills img{
         float: left;        
     }
-    .bowling img{
+    .qualities img{
         float: right;
     }
-    #break, #bowling{
+    #skills, #qualities{
         padding: 70px 0 0 0;
     }
     #portfolio img{
@@ -504,7 +508,7 @@ input{
         width: 100%;
         transform: translate(-20%, 5%);
     }
-    .break img, .bowling img{
+    .skills img, .qualities img{
         width: 44%;
         padding: 75px 10% 0 10%;
     }
@@ -520,7 +524,6 @@ input{
         width: 30%;
     }
     
-
     /** responsive contactpage **/
     .content{
         display: grid;
