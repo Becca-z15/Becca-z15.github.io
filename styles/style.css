@@ -212,26 +212,26 @@ footer{
 .me p{
     padding: 10% 0 10% 0;
 }
-.about{
+.dosth{
     position: relative;
     background-color: #5D9DD2;
     height: 130px;
 }
-.about img{
+.dosth img{
     position: absolute;	
     opacity:0.6; 
     filter: alpha(opacity=60);
     clip: rect(0px,1920px,130px,0px);
     width: 100%;
 }
-.about h2{
+.dosth h2{
     position: relative;
     color: white;
     text-align: center;
     top: 50%;
     transform: translate(0, -50%);
 }
-#about, .bowling{
+#dosth, .bowling{
     background-color: #E8F2FE;
     padding: 0 0 70px 0;
 }
@@ -382,12 +382,12 @@ input{
     .me p{
         grid-column: 3/span 2;
     }
-    .entertainment img{
+    .college img{
         position: absolute;
         clip: rect(120px,1024px,360px,0px);
         transform: translate(0, -30%);
     }
-    .entertainment h3{
+    .college h3{
         padding: 250px 0 0 0;
     }
 
@@ -452,21 +452,21 @@ input{
     .me p{
         grid-column: 5/span 5;
     }
-    #about{
+    #dosth{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .entertainment{
+    .college{
         display: grid;
         grid-template-columns: repeat(9, 1fr);
     }
-    .entertainment img{
+    .college img{
         grid-column: 6/span 3;
         clip: rect(100px,1024px,400px,0px);
         width: 45%;
         transform: translate(110%, 10%);
     }
-    #entertainment{
+    #college{
         grid-column: 1/span 4;
         transform: translate(10%, -20%);
     }
