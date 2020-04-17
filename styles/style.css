@@ -451,7 +451,6 @@ input{
         width: 600px;
         height: 450px;
         border: 0;
-        transform: translate(-20%, 0);
     }
 }
 
@@ -561,5 +560,8 @@ input{
         padding: 30px 0 0 0;
         grid-column: 6/span 3;
         transform: translate(5%, 0);
+    }
+    .map iframe{
+        transform: translate(-20%, 0);
     }
 }
