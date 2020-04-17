@@ -1,0 +1,17 @@
+$colors: red, orange, yellow, green, blue, purple;
+
+@for $size from 0 through 7 {
+  svg.size#{$size} {
+    width: 25px + (5 * $size);
+    height: 25px +(5 * $size);
+  }
+  path.size#{$size} {
+    transform: scale(1 +(.2 * $size));
+  }
+  
+  @each $color in $colors{
+    .#{$color} {
+      fill: $color;
+    }
+  }
+}
